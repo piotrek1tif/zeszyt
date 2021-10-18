@@ -24,6 +24,26 @@
 - Jądro systemu operacyjnego Windows NT.<br/>
 Podczas każdego procesu ładowany jest program. W zależności od tego, czy korzysta ze starszego systemu BIOS, czy UEFI, ścieżki i pliki się zmieniają.
   <li>Tryby uruchamiania systemu Windows</li>
-  
+  - TRYB AWARYJNY - rozruch systemu odbywa się przy załadowaniu minimalnej liczby sterowników i usług systemowych, które są absolutnie niezbędne do rozruchu systemu. Programy znajdujące się w grupie STARTUP, nie zostają ładowane, aby było możliwe między innymi, usunięcie problemów wywoływanych przez te właśnie programy.
+<br/>
+- TRYB AWARYJNY Z OBSŁUGA SIECI - bardzo zbliżony w działaniu i funkcjonalności do standardowego trybu awaryjnego, z tą różnicą, że są ładowane dodatkowe usługi pozwalające na poruszanie się w sieci. Ten tryb umożliwia wykorzystanie funkcji ZASAD GRUP, także tych realizowanych przez serwer podczas operacji logowania, a także zasad obowiązujących na lokalnej maszynie.
+<br/>
+- TRYB AWARYJNY Z WIERSZEM POLECENIA - po załadowaniu tego trybu, nie mamy możliwości korzystania z myszy, gdyż EXPLORER.EXE (czyli między innymi Pulpit) nie zostaje załadowany. W zamian zostaje uruchomione środowisko interpretera poleceń - czyli środowisko DOS`owe.
+<br/>
+- WŁĄCZ REJESTRACJĘ ROZRUCHU - proces normalnego rozruchu systemu. Dodatkowo podczas uruchamiania, tworzony jest plik dziennika o nazwie Ntbtlog.txt w głównym folderze systemowym (%SystemRoot%), który zawiera nazwy i stany wszystkich załadowanych do pamięci sterowników.
+<br/>
+- WŁĄCZ TRYB VGA - uruchamia system z wykorzystaniem podstawowego sterownika karty graficznej (najczęściej w najniższej rozdzielczości i z użyciem minimalnej liczby kolorów). Tryb ten należy stosować gdy obecny w systemie sterownik został uszkodzony, lub został zainstalowany sterownik niekompatybilny.
+<br/>
+- OSTATNIA ZNANA DOBRA KONFIGURACJA - po wystąpieniu awarii, lub w razie występowania różnych problemów, użycie tej opcji powoduje uruchomienie systemu w ostatniej konfiguracji, w której system działał poprawnie.
+<br/>
+- TRYB ODZYSKIWANIA USŁUG KATALOGOWYCH - odnosi się jedynie do domen Windows 2000 i XP. Przy uruchamianiu, wyświetlane są informacje odnoszące się do systemu: liczba procesorów, ilość pamięci, zainstalowane poprawki czy numer wersji systemu.
+<br/>
+- TRYB DEBUGOWANIA - uruchomienie w tym trybie, powoduje zainicjowanie procesu sprawdzania i próby naprawy jądra (debugowania). Jest to możliwe z tego względu, że debuger ma bezpośredni dostęp do jądra.
+<br/>
+  - NORMALNY ROZRUCH - opcja która uruchamia system w normalnym trybie, z ładowaniem wszystkich skonfigurowanych usług i zainstalowanych aplikacji.
+<br/>
+- TRYB AWARYJNY - ten tryb pracy systemu, jest przeznaczony do diagnozy i usuwania problemów działania lub uruchamiania systemu. Ze względu na specyficzny sposób ładowania usług i programów, pozwala na uruchomienie systemu nawet w przypadku poważnych problemów, związanych ze sterownikami lub programami. Aby przejść do trybu awaryjnego, należy użyć klawisza F8, po pojawieniu się komunikatu "Aby zobaczyć opcje rozwiązywania problemów i zaawansowane opcje uruchamiania …" dla WINDOWS 2000 i także F8 po tuż po zainicjowaniu przez BIOS zainstalowanych urządzeń dla pozostałych systemów. Wtedy zostanie wyświetlone menu z omawianymi opcjami, i z trybem awaryjnym, lub wyjść z menu klawiszem ESC. Uruchomienie systemu w tym trybie, spowoduje także wygenerowanie pliku dziennika rozruchowego Ntbtlog.txt, a w przypadku istnienia już takiego pliku, informacje zostaną dopisane na końcu istniejącego pliku.
+
   <li>Folder autostart</li>
+  
   </h3>
