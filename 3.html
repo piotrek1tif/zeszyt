@@ -2,18 +2,28 @@
 <h1>Architektura systemu WIndows</h1>
 <h3>
   <li>Jądro systermu</li>
-   podstawowa część systemu operacyjnego, która jest odpowiedzialna za wszystkie jego zadania.
-  Przykładowe zadania jądra systemu operacyjnego:
-- obsługa procesów (uruchamianie, wstrzymywanie, przełączanie, zatrzymywanie, …) — najważniejsze zadanie jądra,
-- obsługa urządzeń i ich przerwań,
-- zarządzanie zasobami komputera,
-- zarządzanie pamięcią,
-- zarządzanie pamięcią masową,
-- obsługa sieci.
+  Podstawowa część systemu operacyjnego, która jest odpowiedzialna za wszystkie jego zadania.
+  Przykładowe zadania jądra systemu operacyjnego:<br/>
+- obsługa procesów (uruchamianie, wstrzymywanie, przełączanie, zatrzymywanie, …) — najważniejsze zadanie jądra,<br/>
+- obsługa urządzeń i ich przerwań,<br/>
+- zarządzanie zasobami komputera,<br/>
+- zarządzanie pamięcią,<br/>
+- zarządzanie pamięcią masową,<br/>
+- obsługa sieci.<br/>
   <li>Pamięć fizyczna, wirtualna</li>
+ mechanizm zarządzania pamięcią komputera zapewniający procesowi wrażenie pracy w jednym, dużym, ciągłym obszarze pamięci operacyjnej, podczas gdy fizycznie może być ona pofragmentowana, nieciągła i częściowo przechowywana na urządzeniach pamięci masowej.
   <li>Wielozadaniowość</li>
+   cecha systemu operacyjnego umożliwiająca równoczesne wykonywanie więcej niż jednego procesu. Zwykle za poprawną realizację wielozadaniowości odpowiedzialne jest jądro systemu operacyjnego.Systemy wielozadaniowe można podzielić na oferujące i nie oferujące wywłaszczanie. W systemach z wywłaszczaniem może nastąpić przerwanie wykonywania procesu, czyli niejako „odebranie” mu procesora, i przekazanie sterowania do planisty. Pełne wywłaszczanie zapewniają tylko mechanizmy sprzętowe działające niezależnie od oprogramowania (np. dołączanie wywłaszczania do procedury obsługi przerwania zegarowego). W systemach bez wywłaszczania procesy powinny same dbać o sprawiedliwy podział czasu, co często uzyskuje się pośrednio – proces dokonując wywołania systemowego oddaje sterowanie procesowi jądra lub jednemu z procesów systemowych i w ten sposób „zrzeka” się procesora. Program niewykonywany pozostaje „w uśpieniu” do momentu, gdy znów zostanie mu przydzielony czas procesora.
   <li>Menedżer zadań</li>
+  program służący do zarządzania procesami danego systemu operacyjnego, monitorowania systemu analizy działania sieci, dysku i innych części składowych komputera. Zapewnia dostęp do informacji takich jak: wydajność komputera, uruchomione aplikacje i procesy, stan pamięci komputera. 
   <li>Etapy uruchamiania systemu operqacyjnego</li>
+  Proces uruchamiania systemu Windows 10 w systemach BIOS składa się z czterech głównych faz. Zaczyna się od POST i kończy się ładowaniem modułu ładującego system operacyjny Windows lub jądra. Oto lista etapów, przez które przechodzi:
+<br/>- PreBoot<br/>
+- Menedżer uruchamiania systemu<br/>
+- Moduł ładujący system operacyjny Windows.<br/>
+- Jądro systemu operacyjnego Windows NT.<br/>
+Podczas każdego procesu ładowany jest program. W zależności od tego, czy korzysta ze starszego systemu BIOS, czy UEFI, ścieżki i pliki się zmieniają.
   <li>Tryby uruchamiania systemu Windows</li>
+  
   <li>Folder autostart</li>
   </h3>
