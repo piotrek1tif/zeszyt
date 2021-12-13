@@ -1,0 +1,19 @@
+<h2>Sieci</h2>
+<h3>Sieci to systemy, które zbudowane są połączeń. Sieć komputerowa jest połączonym przez urządzenia sieciowe zbiorem hostów, takich jak komputery, drukarki, skanery, smartfony oraz serwery plików i drukarek
+<br/> 
+Typy sieci: <br/>
+- LAN - sieć komputerowa łącząca komputery na określonym obszarze. Sieć LAN może być wydzielona zarówno fizycznie, jak i logicznie w ramach innej sieci <br/>
+- WLAN - lokalna sieć bezprzewodowa stworzona z komputerów lub innych urządzeń, które mają możliwość bezprzewodowego połączenia się z Internetem <br/>
+- Sieć osobista - jest siecią, która łączy urządzenia przypisane do danej osoby takie jak: mysz, klawiatura, drukarka, smartfon <br/>
+- Sieć MAN - duża sieć komputerowa, której zasięg obejmuje aglomerację lub miasto. Tego typu sieci używają najczęściej połączeń światłowodowych do komunikacji między wchodzącymi w jej skład rozproszonymi sieciami LAN <br/>
+- Sieć rozległa - sieć komputerowa znajdująca się na obszarze wykraczającym poza miasto, kraj lub kontynent. Internet jest obecnie największą istniejącą siecią WAN <br/>
+Szerokość pasma - ilość danych, która może być transmitowana w jednostce czasu <br/>
+Szerokość pasma mierzy się w bitach na sekundę i podawana jest za pomocą jednej z następujących jednostek miary: <br/>
+- b/s - bity na sekundę <br/>
+- Kb/s - kilobity na sekundę <br/>
+- Mb/s - megabity na sekundę <br/>
+- Gb/s - gigabity na sekundę <br/>
+Adres IP - adres nadawany komputerom lub innym urządzeniom korzystającym z interfejsu sieciowego służącego do komunikacji minimum dwóch urządzeń.
+
+
+</h3>
