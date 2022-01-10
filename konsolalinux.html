@@ -1,1 +1,64 @@
-<h1>Wiersz poleceń systemu Linux<h1>
+<h1>Wiersz poleceń systemu Linux</h1>
+<h2>
+Wiersz poleceń systemu Linux to tekstowy interfejs poleceń. Często nazywany powłoką, terminalem, konsolą lub różnymi innymi nazwami, może sprawiać wrażenie złożonego i mylącego w użyciu.
+<br/>
+  Komendy:
+  <br/>
+   OGÓLNE POLECENIA
+
+  man costam – info o danym poleceniu </br>
+cd nazwa_katalogu – wejście do katalogu </br>
+cd .. – wyjście z katalogu </br>
+mkdir nazwa_katalogu – tworzy katalog </br>
+rmdir nazwa_katalogu – usuwa katalog </br>
+rm nazwa_pliku – usuwa plik </br>
+rm * – usuwa wszystkie pliki z danego katalogu </br>
+rm * -i – usuwa wszystkie pliki z danego katalogu z potwierdzeniem </br> 
+rm * -f – usuwa wszystkie pliki z danego katalogu i wyłącza potwierdzenia (nawet zabezpieczone przed usunięciem) </br>
+rm -f – usunięcie plików zabezpieczonych przed kopiowaniem </br>
+rm -r – usunięcie plików również w podkatalogach </br>
+rm -rf – usuwa cały system plików </br>
+chmod u+r jeden.doc – mogę czytać dany plik </br>
+w – mogę zapisywać i edytować dany plik </br>
+x – mogę wykonywać dany plik </br>
+ls -a – pokazuje ukryte pliki </br>
+ls -l – pokazuje więcej info o pliku: </br>
+
+W WYNIKACH POWYŻSZEJ KOMENDY NA POCZĄTKU SĄ: </br>
+„-„ – oznacza zwykły plik </br>
+„d” – oznacza katalog </br>
+Potem pierwsze 3 znaki oznaczają dostępność do pliku właściciela, następne 3 znaki dla grupy, a następne 3 dla innych użytkowników </br>
+
+ls > wynik – wysłanie spisu zawartości katalogu do pliku wynik jeżeli taki plik istnieje to skasuje się jego poprzednia zawartość </br>
+ls >> wynik – dopisanie zawartości katalogu do zawartości pliku wynik </br>
+mount /mnt/floppy – montuje flopa </br>
+umount /mnt/floppy – rozmontowuje flopa </br>
+cat jeden.doc > wszystkie.doc – nadpisanie zawartości w pliku wszystkie.doc zawartościami innych plików </br>
+cat jeden.doc dwa.doc >> wszystkie.doc – dopisanie do pliku wszystkie.doc zawartości innych plików </br>
+cat nazwa_pliku – czytanie zawartości pliku </br>
+cat *.doc – znajdzie np.: dwa.doc sratytaty.doc </br>
+cat jeden.doc dwa.doc > wszystkie.doc – wrzuca zawartość plików do jednego </br>
+cat < jeden.doc > dwa.doc – wypisze zawartość jeden.doc na ekran (standartowe wyjście) i nadpisze zawartość pliku jeden.doc do pliku dwa.doc </br>
+cat parowka.doc | more – wyjście programu cat (parowka.doc) jest przekazywane na wyjście programu more </br>
+head -42 nazwa_pliku – wyświetla 42 pierwszych wierszy zawartych w pliku </br>
+tail -42 nazwa_pliku – wyświetla 42 końcowych wierszy zawartych w pliku (przydaje się w obserwowaniu świeżo dopisanych logów do pliku) </br>
+cp plik_zrodlowy plik_docelowy – kopiuje zawartość z pliku do pliku </br>
+cp plik(i)_zrodlowy katalog(i)_docelowy – kopiuje pliki do katalogu </br>
+mv stara_nazwa nowa_nazwa – zmiana nazwy pliku </br>
+mv nazwa_pliku nazwa_katalogu – przenoszenie pliku do katalogu </br>
+lp nazwa_pliku – drukowanie pliku </br>
+lpr nazwa_pliku – wstawienie pliku do koleiki drukowania </br>
+pwd – pokazuje w jakim jesteś katalogu </br>
+. – oznacza katalog bieżący </br>
+.. – oznacza katalog nadrzędny </br>
+touch nazwa_pliku – tworzy pusty plik </br>
+stty -a – wypisanie skrótów do np. zatrzymania procesu </br>
+mail – otwiera plik z poczta </br>
+printenv albo export (powłoka C) – zobaczenie zawartości zmiennych środowiska </br>
+nazwa=zawartość – pierwsze przypisze zmiennej powłoki odpowiednia zawartość</br>
+export nazwa drugie utworzy zmienna o tej samej nazwie i zawartości co zmienna powłoki</br>
+MOJA_ZMIENNA=”jakas_wartosc” – tworzy zmienna środowiska z wartością „jakas_wartosc”</br>
+echo $MOJA_ZMIENNA wypisuje zawartość MOJA_ZMIENNA (znakiem dolara poprzedzamy nazwy zmiennych środ. które to nazwy powłoka ma zastąpić zawartością odpowiedniej zmiennej</br>
+find ścieżka/nazwa_pliku lub kryterium – wyszukiwanie plików</br>
+grep – służy do wyszukiwania plików według zadanego wzorca</br>
+</h2>
