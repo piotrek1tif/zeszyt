@@ -1,0 +1,15 @@
+Specyfikacja połączeń żył we wtykach RJ-45
+<br/>
+Wyróżnia się dwa podstawowe standardy połączeń żył dla sieci 100Base-T:
+T568B (częściej stosowany)
+T568A
+
+Jeżeli z dwóch stron zostanie zastosowany jeden standard zaciskania złącza, uzyska się tzw. kabel "prosty". W przypadku zastosowania dwóch różnych standardów, uzyska się tzw. kabel "krosowany".
+Do połączeń komputer - switch (hub, router) używamy kabla „prostego”, natomiast do połączenia komputer - komputer potrzebny będzie kabel „krosowany”.
+Tłumienie skrętki
+Tłumienie jest to stosunek napięcia wyjściowego do napięcia wejściowego sygnału transmitowanego w przewodzie, wyrażany w decybelach na jednostkę długości.
+Na całkowitą tłumienność skrętki mają wpływ następujące czynniki:
+Częstotliwość - im wyższa częstotliwość, tym większa tłumienność,
+Długość kabla - dłuższy przewód wprowadza większą tłumienność,
+Wiek kabla i jego jakość (materiał) - przewód ulega starzeniu co pogarsza jego parametry,
+Wilgotność.
