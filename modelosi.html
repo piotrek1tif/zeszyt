@@ -1,0 +1,25 @@
+Model OSI 7. Warstwa aplikacji NNTP SIP SSI DNS FTP Gopher HTTP NFS NTP SMPP SMTP SNMP Telnet DHCP Netconf RTP 6. Warstwa prezentacji MIME XDR TLS SSL 5. Warstwa sesji Potoki NetBIOS SAP L2TP PPTP SPDY 4. Warstwa transportowa TCP UDP SCTP DCCP SPX 3. Warstwa sieciowa IP ICMP IPsec IGMP IPX AppleTalk Router 2.
+<br/>
+Warstwa aplikacji udostępnia użytkownikom możliwość korzystania z usług sieciowych, takich jak WWW, poczta elektroniczna, wymiana plików, połączenia terminalowe czy komunikatory. Swoim uczniom mówię zawsze, że jest to warstwa najbliższa użytkownikowi, ponieważ to właśnie ona pozwala nam w pełni korzystać z dobrodziejstw współczesnych usług sieciowych. Kiedy siadamy przed komputerem i uruchamiamy np. przeglądarkę internetową to korzystamy z sieci właśnie na poziomie warstwy aplikacji.
+<br/>
+Niżej mamy warstwę transportu, której głównym zadaniem jest sprawna obsługa komunikacji pomiędzy urządzeniami. W warstwie tej dane dzielone są na mniejsze części, następnie opatrywane są dodatkowymi informacjami pozwalającymi zarówno przydzielić je do właściwej aplikacji na urządzeniu docelowym, jak i pozwalającymi złożyć je na urządzeniu docelowym w odpowiedniej kolejności.
+<br/>
+Dalej jest warstwa internetowa, której głównym zadaniem jest odnalezienie najkrótszej i najszybszej drogi do urządzenia docelowego przez sieć rozległą, podobnie jak robią to samochodowe GPS’y, ale także adresowanie danych z wykorzystaniem adresów logicznych (adresów IP).
+<br/>
+No i na koniec mamy warstwę dostępu do sieci, która koduje dane do postaci czystych bitów (zer i jedynek) i przekazuje je do medium transmisyjnego i także je adresuje, tym razem poprzez adresy fizyczne (adresy MAC).
+<br/>
+Model ISO/OSI składa się z 7 warstw: <br/>
+Na samej górze tego modelu wyróżnić możemy warstwę aplikacji i tutaj tak naprawdę jej funkcję są bardzo podobne do tych z modelu TCP/IP, no bo pozwalają użytkownikom końcowym sieci korzystać z aplikacji sieciowych.
+<br/>
+Dalej mamy warstwę prezentacji, która to przekazuje do warstwy aplikacji informacje o zastosowanym formacie danych, np. informuje jakie typy plików będą przesyłane, odpowiada ona również za odpowiednie zakodowanie danych na urządzeniu źródłowym i ich dekodowanie na urządzeniu docelowym.
+<br/>
+Niżej jest warstwa sesji, zarządzająca sesjami użytkowników korzystających np. ze stron WWW czy komunikacji video.
+<br/>
+Idąc dalej mamy warstwę transportu, czyli ponownie dokładnie to samo co w modelu TCP/IP, zarówno w jednym jak i w drugim przypadku funkcje tej warstwy są dokładnie takie same.
+<br/>
+Następnie mamy warstwę sieci, która jest odpowiednikiem warstwy internetowej modelu TCP/IP czyli znowu bardzo podobne funkcje, takie jak adresowanie i wyznaczanie najlepszej ścieżki przesyłu danych.
+<br/>
+Dalej idąc w dół mamy warstwę łącza danych, której głównym zadaniem jest kontrola dostępu do medium transmisyjnego, a także adresowanie danych, tym razem jednak w celu przesyłania ich pomiędzy hostami w sieci LAN.
+<br/>
+No i na koniec warstwa fizyczna, która koduje dane do postaci czystych bitów (zer i jedynek) i przesyła je poprzez medium transmisyjne do odpowiednich urządzeń.
+<br/>
