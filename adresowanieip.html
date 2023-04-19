@@ -1,0 +1,14 @@
+Jednym z kluczowych zadań warstwy sieci jest adresowanie. Adresowanie w sieciach IP jest bardzo podobne do adresowania stosowanego przez nas, ludzi. Oczywiście tylko na poziomie logicznym, mechanizmy adresowania są różne. Hosty w sieciach zostały pogrupowane w celu łatwiejszego nimi zarządzania i adresowania.
+Podobnie jak u ludzi, też mieszkamy w miastach, na konkretnych ulicach. Dzięki temu wspomniana wcześniej paczka od cioci z Ameryki łatwo mogła dotrzeć do odbiorcy. Najpierw została wysłana promem do Polski, potem ciężarówką do Twojego miasta, następnie mniejszym autem pod wskazaną ulicę i numer domu. Bardzo podobnie jest z adresowanie hostów. Pakiet przesyłany pomiędzy sieciami, najpierw trafia do sieci, do której przynależy host, a potem przesyłany jest już do konkretnego hosta. Ten typ adresowania nazywany jest adresowaniem hierarchicznym, bo najpierw doczytywane są informacje ogólne, czyli w przypadku przesyłania danych adres sieci, potem dopiero te szczegółowe, czyli adres IP konkretnego hosta.
+W sieciach komputerowych hosty mogą się ze sobą komunikować na trzy sposoby:
+<br/>
+z wykorzystaniem transmisji pojedynczej (ang. Unicast);<br/>
+poprzez rozsyłanie grupowe (ang. Multicast);<br/>
+poprzez rozgłaszanie (ang. Broadcast).<br/>
+Transmisja typu unicast stosowana jest najczęściej, wykorzystywana jest w typowych połączeniach pomiędzy dwoma hostami. Przykładowo, kiedy klient wysyła żądanie do serwera, wykorzystuje do tego właśnie transmisje unicast.
+<br/>
+Zastosowanie transmisji grupowej, czyli multicast w znacznym stopniu pozwala zredukować zużycie pasma w sieci ponieważ nie wysyła się pojedynczych pakietów do wielu hostów, tak jak byłoby to realizowane z użyciem transmisji pojedynczej, lecz wysyła się jeden pakiet, który trafić może do wielu odbiorców jednocześnie.
+<br/>
+Broadcast, czyli rozgłaszanie, polega z kolei na wysyłaniu pakietów do wszystkich hostów w danej sieci. Wykorzystywany jest do tego specjalny adres, adres rozgłoszeniowy, więc nie jest tak, że w pakiecie IP zapisane są adresy wszystkich hostów w sieci. Byłoby to technicznie nie możliwe, to raz, a dwa transmisję rozgłoszeniową stosuję się na przykład wówczas, kiedy nieznany jest adres konkretnego urządzania. Ten rodzaj transmisji wykorzystywany jest najczęściej w sieciach lokalnych, rzadko zdarza się, że rozgłaszanie stosuje się do komunikacji z hostami spoza danej sieci lokalnej.
+<br/>
+
